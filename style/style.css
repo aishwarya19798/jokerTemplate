@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/jpg/jokerBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  margin: 50px 0px;
+}
+
+.logo {
+  /* margin-top:50px; */
+  margin-left: 100px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-icon {
+  margin-right: 100px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+.menu-icon .upper-div {
+  background-color: whitesmoke;
+  height: 2px;
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.menu-icon .lower-div {
+  background-color: whitesmoke;
+  height: 2px;
+  width: 40px;
+  float: right;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.hero-content h1 {
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-content p {
+  color: whitesmoke;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.hero-container .trailer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  /* justify-items: center; */
+}
+
+.hero-container .trailer a{
+  display: flex;
+  align-items: center;
+}
+
+.hero-container .trailer a svg{
+  margin-right: 20px;
+}
+
+.hero-container .trailer:hover > a,
+.hero-container .trailer:hover > a > * {
+  color: tomato;
+  stroke: tomato;
+}
+
+.hero-container .video{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.788);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.hero-container .video .preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cross{
+    color: tomato;
+    align-self: flex-end;
+    padding: 1em;
+    /* margin: 1em; */
+    padding-right: 0;
+    margin-right: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.hero-container .trailer svg {
+  stroke: whitesmoke;
+  stroke-width: 1px;
+  width: 45px;
+  height: auto;
+}
+
+.hero-container .trailer a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin-left: 10px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 250px;
+}
+.social-icons svg {
+  width: 25px;
+  height: auto;
+  stroke: whitesmoke;
+  margin: 3px;
+  transition: 0.2s all;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  stroke: tomato;
+}
+.social-icons p {
+  color: whitesmoke;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  position: absolute;
+  top:0;
+  right:0;
+  background-color: rgba(0, 0, 0, 0.753);
+  padding:150px;
+  transform: translateX(500px);
+  transition: all 1s;
+}
+
+.menu a{
+  font-size: 30px;
+  padding: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.menu a:hover{
+  color: tomato;
+  transform: scale(1.5);
+}
+
+body{
+  overflow: hidden;
+}
